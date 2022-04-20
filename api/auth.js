@@ -4,8 +4,8 @@ const session= require('express-session')
 const mysqlSession= require("express-mysql-session")(session)
 const bcrypt=require('bcrypt')
 const { v4 } =require("uuid")
-const usersModel=require("../api/users")
-const Messages=require("../api/messages")
+const usersModel=require("../models/users")
+const Messages=require("../models/messages")
 
 
 //  User Session 

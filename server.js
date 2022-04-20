@@ -1,7 +1,7 @@
 const express=require("express")
 const app =express()
-const authRoute=require("./Auth/auth")
-const userRoute=require("./user/user_page")
+const authRoute=require("./api/auth")
+const userRoute=require("./api/user_page")
 const port = process.env.PORT || 4000
 
 
