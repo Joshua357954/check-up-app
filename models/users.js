@@ -4,18 +4,18 @@ const mysql=require("mysql")
 
 let pool= mysql.createPool({
 	connectionLimit:12,
-	host:"localhost",
-	user:"root",
-	password:"",
-	database:"check-up"
+	host:"sql4.freemysqlhosting.net",
+	user:"sql4487046",
+	password:"4m5VdgHYhZ",
+	database:"sql4487046"
 })
 
-
+// sql4487046
 let sessionConfig=({
-	host:"localhost",
-	user:"root",
-	password:"",
-	database:"check-up"
+	host:"sql4.freemysqlhosting.net",
+	user:"sql4487046",
+	password:"4m5VdgHYhZ",
+	database:"sql4487046"
 })
 
 
