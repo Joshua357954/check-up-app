@@ -34,8 +34,5 @@
   "devDependencies": {
     "axios": "^0.25.0",
     "nodemon": "^2.0.15"
-  },
-  "engines": {
-    "node": "14.x"
   }
 }

@@ -1,7 +1,7 @@
 const express=require("express")
 const app =express()
-const authRoute=require("./api/auth")
-const userRoute=require("./api/user_page")
+const authRoute=require("/api/auth")
+const userRoute=require("/api/user_page")
 const port = process.env.PORT || 4000
 
 
@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(authRoute.userSession)
 
-app.use("/static",express.static("static"))
+app.use("/api/static",express.static("static"))
 
 app.use("/",authRoute.auth)
 
