@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(authRoute.userSession)
 
-app.use(express.static("public"))
+app.use(express.static("static"))
 
 app.use("/",authRoute.auth)
 
