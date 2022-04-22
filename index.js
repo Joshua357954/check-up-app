@@ -19,7 +19,7 @@ app.use("/u",userRoute.route)
 app.set("view engine","ejs")
 
 
-app.get('/',(req,res)=>{
+app.get('/api',(req,res)=>{
 	req.session.user
 	res.render("home",{user:req.session.user})
 
