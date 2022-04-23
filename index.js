@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:false}))
 
 app.use(authRoute.userSession)
 
-app.use(express.static("static"))
+app.use("/static",express.static("static"))
 
 app.use("/",authRoute.auth)
 
@@ -19,7 +19,7 @@ app.use("/u",userRoute.route)
 app.set("view engine","ejs")
 
 
-app.get('/api',(req,res)=>{
+app.get('/',(req,res)=>{
 	req.session.user
 	res.render("home",{user:req.session.user})
 
